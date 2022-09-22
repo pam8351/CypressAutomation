@@ -10,7 +10,7 @@ All after() hooks run (once)*/
 import 'cypress-iframe';
 import HomePage from '../examples/pageObjects/HomePage';
 import ProductPage from '../examples/pageObjects/ProductPage';
-let argv = require('yargs')(process.argv.slice(2))
+
 
 describe('My first Test suite', function () {
 
@@ -42,7 +42,7 @@ describe('My first Test suite', function () {
             cy.log(sum);
         })
         productPage.getFinalCheckoutButton().click();
-        let country=argv.country;
+        let country=Cypress.env('url')
         productPage.getDeliveryLocation().type(country);
        
         productPage.getResultDropDown().click();

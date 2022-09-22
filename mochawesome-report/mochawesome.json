@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-09-20T23:32:09.652Z",
-    "end": "2022-09-20T23:32:17.074Z",
-    "duration": 7422,
+    "start": "2022-09-22T21:48:27.392Z",
+    "end": "2022-09-22T21:48:35.115Z",
+    "duration": 7723,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f2fa37f3-947e-45f4-b329-e677d85a996d",
+      "uuid": "f8300c7c-d74d-49e2-91a1-37ff80d91b26",
       "title": "",
       "fullFile": "cypress/integration/examples/test1.js",
       "file": "cypress/integration/examples/test1.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ae1729cc-dac6-4167-92b4-06695366c4fd",
+          "uuid": "ba939cd9-9052-4c6e-8a6f-a2faff47338a",
           "title": "My second Test suite",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "My fist test case",
               "fullTitle": "My second Test suite My fist test case",
               "timedOut": null,
-              "duration": 6094,
+              "duration": 6387,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://rahulshettyacademy.com/seleniumPractise/#/\");\ncy.get('.search-keyword').type('ca');\ncy.wait(2000);\ncy.get('.product:visible').should('have.length', 4);\ncy.get('.products').find('.product').should('have.length', 4);\ncy.get('.products').find('.product').eq(1).contains('ADD TO CART').click();\ncy.get('.products').find('.product').each(function ($e1, index, $list) {\n  var veg = $e1.find('h4.product-name').text();\n  if (veg.includes('Cashews')) {\n    cy.wrap($e1).find('button').click();\n  }\n});",
               "err": {},
-              "uuid": "42118000-2e1f-4dbc-ad20-d5491f199b60",
-              "parentUUID": "ae1729cc-dac6-4167-92b4-06695366c4fd",
+              "uuid": "8420b67b-58bf-47ef-8178-b40aea8922d3",
+              "parentUUID": "ba939cd9-9052-4c6e-8a6f-a2faff47338a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "42118000-2e1f-4dbc-ad20-d5491f199b60"
+            "8420b67b-58bf-47ef-8178-b40aea8922d3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6094,
+          "duration": 6387,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

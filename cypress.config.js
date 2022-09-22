@@ -16,6 +16,7 @@ module.exports = defineConfig({
 
   env:{
     url:"https://rahulshettyacademy.com/angularpractice/",
+    country:"usa"
   },
   
 
