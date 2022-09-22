@@ -42,7 +42,7 @@ describe('My first Test suite', function () {
             cy.log(sum);
         })
         productPage.getFinalCheckoutButton().click();
-        let country=Cypress.env('url')
+        let country=Cypress.env('country')
         productPage.getDeliveryLocation().type(country);
        
         productPage.getResultDropDown().click();
