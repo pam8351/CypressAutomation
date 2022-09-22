@@ -43,6 +43,7 @@ describe('My first Test suite', function () {
         productPage.getFinalCheckoutButton().click();
         let country=process.argv.country;
         productPage.getDeliveryLocation().type(country);
+       
         productPage.getResultDropDown().click();
         cy.get('#checkbox2').click({force:true});
         cy.get('input[type="submit"]').click();
@@ -61,4 +62,4 @@ describe('My first Test suite', function () {
 
 //To rerun the failed test cases ylou can use ""retries":{ json code}" google and refer cypress retries failure.
 
-/* Jenkins integration:
+
