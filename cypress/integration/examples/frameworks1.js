@@ -41,7 +41,8 @@ describe('My first Test suite', function () {
             cy.log(sum);
         })
         productPage.getFinalCheckoutButton().click();
-        productPage.getDeliveryLocation().type('India');
+        let country=process.argv.country;
+        productPage.getDeliveryLocation().type(country);
         productPage.getResultDropDown().click();
         cy.get('#checkbox2').click({force:true});
         cy.get('input[type="submit"]').click();
@@ -57,3 +58,7 @@ describe('My first Test suite', function () {
 });
 
 // To run the test from command prompt with new env link :  \.bin\cypress run --spec cypress/integration/examples/franeworks1.js --env url=http://google.com --headed
+
+//To rerun the failed test cases ylou can use ""retries":{ json code}" google and refer cypress retries failure.
+
+/* Jenkins integration:
